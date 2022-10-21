@@ -1,7 +1,7 @@
 const budget = 80;
 
-function setStatusMessage(xxx,msg,reset=false) {
-   if (!reset) {
+function setStatusMessage(xxx,msg,reset=true) {
+   if (reset) {
      document.getElementById(xxx).innerHTML=msg;
    }
    else {
